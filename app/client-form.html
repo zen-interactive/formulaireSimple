@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Formulaire client</h1>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input id="name" type="text" class="form-control" required 
+        [(ngModel)]="user.name"
+        #name="ngForm">
+      <span [hidden]="name.valid" class="text-danger">Vous devez entrer un nom !</span>
+    </div>
+    <div class="form-group">
+      <label for="role">Rôle</label>
+      <select id="role" class="form-control" 
+        [(ngModel)]="user.role">
+        <option *ngFor="let role of roles" [value]="role">{{ role }}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  L'utilisateur s'appelle {{ user.name }} et c'est un {{ user.role }}.
+</div>
