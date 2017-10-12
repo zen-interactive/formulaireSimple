@@ -1,4 +1,4 @@
-# formulaireSimple
+# Formulaire Simple
 Un formulaire simple avec Angular 2
 
 > npm install
