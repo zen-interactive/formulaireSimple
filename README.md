@@ -1,5 +1,5 @@
 # Formulaire simple de modification
-Un formulaire simple avec Angular 2
+Exemple d'un formulaire simple de modification avec Angular 2
 
 > npm install
 
